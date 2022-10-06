@@ -1,0 +1,112 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #e5e5e5;
+}
+
+body {
+    background-color: #030912;
+}
+
+header {
+    width: 100%;
+    height: 4rem;
+    background-color: linear-gradient(#000, #333);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: center;
+    top: 0;
+    z-index: 1;
+}
+
+header img {
+    height: 10rem;
+}
+
+.title-box {
+    position: relative;
+    margin-top: 4rem;
+}
+
+.title-box div {
+    position: absolute;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    background: linear-gradient(to right, rgba(10, 10, 10), rgba(10, 10, 10, .8));
+}
+
+.title-box div img {
+    margin: auto;
+    height: 12rem;
+}
+
+.title-box>img {
+    width: 80%;
+    margin-left: 20%;
+    z-index: -1;
+}
+
+.section-part-resumer {
+
+    height: 50vh;
+    border: 4mm ridge rgba(255,0,0,0.3);
+
+}
+
+.section-part-resumer div {
+    padding: 3rem 0;
+}
+
+.section-title {
+    font-size: 5rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+}
+
+.section-title::selection,
+.section-capton *::selection {
+    color: #f00;
+    background: transparent;
+}
+
+
+
+.section-capton {
+    width: 75%;
+}
+
+.section-capton p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+}
+
+.section-part-personnage {
+    height: 50vh;
+}
+
+.section-part-personnage div {
+    padding: 3rem 0;
+}
+
+
+.section-personnage {
+    font-size: 5rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+}
+
+.section-personnage::selection,
+.section-capton *::selection {
+    color: #f00;
+    background: transparent;
+}
+
