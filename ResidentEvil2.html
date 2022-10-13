@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/styleEvil2.css">
     <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="icon" href="./img/umbrellaIcon.png">
     <title>Résident Evil 2</title>
 </head>
+<script src="./script/script.js"></script>
 
 <body>
     <header>
@@ -17,44 +19,81 @@
     <main>
         <section class="title-box">
             <div>
-                <img src="./img/logoRE2remake.png" alt="Logo RE2">
+                <img src="./img/logoRE2remake.png" alt="Logo remake RE2">
             </div>
-            <img src="./img/resident-evil-2-remake-1021x545.jpg" alt="">
+            <img src="./img/resident-evil-2-remake-1021x545.jpg" alt="Fond premier plan">
         </section>
-        <section class="section-part-resumer">
-            <h1 class="section-title">Resumer ET Intrigue</h1>
-            <img class="gif" src="./img/Gif RE2 resumer.gif" alt="gif reumer">
-            <div class="section-caption">
-                <p>(On a deux introduction en fonction du peresonnage qu'on choisie)REMAKE
-                    Après se qui est arrivée au manoir, la ville de Raccon subi de mistérieux évènement (disparition,
-                    epidemis ...).
-                    Leon Kennedy arrive en au abord de la ville et décide de mettre de l'essence a la station service...
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui reiciendis explicabo perferendis
-                    asperiores exercitationem expedita tempora ad facere dignissimos quibusdam suscipit voluptatem quis
-                    incidunt neque tenetur, sunt, velit quo quasi?
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum vel recusandae debitis ipsa
-                    velit, placeat dolorem ipsam cumque itaque odit accusamus nesciunt quaerat aut provident saepe
-                    officiis doloribus tenetur. Obcaecati.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates esse quam quidem atque soluta
-                    explicabo officia! Rem ducimus tempore eveniet iusto exercitationem neque quis, fugiat laboriosam
-                    natus accusamus eaque
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, vero et mollitia quisquam dolorum
-                    corporis natus voluptatum itaque, in quibusdam sit similique nulla iure quaerat minima consequuntur
-                    velit, quod totam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum sint corrupti, tenetur odit
-                    dolores nihil doloribus dicta a, suscipit commodi voluptas obcaecati. Reprehenderit dolores saepe
-                    dolor laudantium recusandae ab?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laudantium aliquid consequuntur
-                    enim corporis natus impedit iste ipsam, nam, at saepe soluta quibusdam aliquam vitae laborum animi
-                    dolore? Ipsum, molestiae.
+        <section class="part-univers">
+            <h1 class="title-univers">Survival Horror</h1>
+            <div class="div-gif">
+                <img src="./img/Gif RE2 resumer.gif" alt="gif resumer">
+            </div>
+            <div class="content-univers">
+                <p>Resident evil 2 est un surival horror basé sur un environnemnt apocalyptique, on doit faire face à
+                    plusieurs ennemis durant l'aventure principale dans cette article nous parlerons aussi bien du
+                    <strong class="strong">Remake (2019)</strong> que
+                    <strong class="strong">Classique (1998)</strong>
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellat, rem reprehenderit quis,
+                    soluta non quam inventore fuga aut possimus obcaecati natus odio aliquam cum saepe molestiae
+                    mollitia magni perspiciatis.
                 </p>
             </div>
         </section>
-        <section class="section-part-personnage">
-            <h1 class="section-personnage">Personnage</h1>
-            <div class="section-texte">
+        <section class="part-resumer">
+            <h1 class="title-resumer">Resumer ET Intrigue</h1>
+            <!--IMG-->
+            <div class="content-resumer">
+                <p>(On a deux introduction en fonction du peresonnage qu'on choisie)REMAKE Après se qui est arrivée au
+                    manoir, la ville de Raccon subi de mistérieux évènement (disparition, epidemis ...). Leon Kennedy
+                    arrive en au abord de la ville et décide
+                    de mettre de l'essence a la station service... Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Qui reiciendis explicabo perferendis asperiores exercitationem expedita tempora ad facere
+                    dignissimos quibusdam suscipit voluptatem
+                    quis incidunt neque tenetur, sunt, velit quo quasi? Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Voluptatum vel recusandae debitis ipsa velit, placeat dolorem ipsam cumque itaque
+                    odit accusamus nesciunt quaerat aut provident
+                    saepe officiis doloribus tenetur. Obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Voluptates esse quam quidem atque soluta explicabo officia! Rem ducimus tempore eveniet iusto
+                    exercitationem neque quis, fugiat laboriosam
+                    natus accusamus eaque Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, vero et
+                    mollitia quisquam dolorum corporis natus voluptatum itaque,
+                </p>
+            </div>
+            <img src="./img/RE2_classque.avif" alt="Image_resumer">
+        </section>
+        <section class="part-personnage">
+            <div class="leon">
+                <h1 class="title-leon">Leon Kennedy</h1>
+                <button class="btnLeon" id="btnLeon" onclick="changeImage()">Leon</button>
+                <p class="content-leon">Fonctionnaire au commissariat de Raccon city, pour son premier jour au sein de
+                    la police au il arrive de nuit, la ville est déja plonger
+                    dans l'horreur a ce momment la il rencontre CLAIRE REDFIELD les deux prirent la décision de joidre
+                    le commisariat...
+                </p>
+            </div>
+            <img src="./img/leonRemake.png" alt="leon_Remake" id="Leon">
+            <div class="claire">
+                <h1 class="title-claire">Claire Riedfield</h1>
+                <button>Claire</button>
+                <p class="content-claire">
+                    Fesant partie de l'unité d'élite au sein du commissiriat de la ville(S.T.A.R.S), sans nouvelle de
+                    son frère Chris Redfield elle mènent sa recherche
+                    a Racon ciyt c'est la qu'ele fera la rencontre de Leon Kennedy.
+                </p>
+
+
+            </div>
+            <img src="./img/claireRemake.jpg" alt="claire">
+        </section>
+        <section class="part-antagoniste">
+            <h1 class="title-antagonsite">Antagoniste</h1>
+            <div class="content-antagonsite">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed voluptatum quis dolorem ea tempora, eos iusto officiis dolor eaque maxime iure earum architecto ab harum aspernatur quasi voluptatibus quidem asperiores?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium placeat cupiditate saepe sint
+                    ipsum, ut, eius rerum vel ullam ea commodi quibusdam reprehenderit error exercitationem eos
+                    accusantium soluta veritatis recusandae!
                 </p>
             </div>
         </section>

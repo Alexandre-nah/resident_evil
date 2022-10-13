@@ -27,3 +27,11 @@ Créateur du virus G, pour survivre il a du se l'injecter, il a muter...
 Résumé::(On a deux introduction en fonction du peresonnage qu'on choisie)REMAKE
 Après se qui est arrivée au manoir, la ville de Raccon subi de mistérieux évènement (disparition, epidemis ...).
 Leon Kennedy arrive en au abord de la ville et décide de mettre de l'essence a la station service...
+
+js
+theButton.onclick = function pictureChange() {
+    document.getElementById("chat").src = "elephant.jpg";
+}
+
+<img id="chat" src="chat.jpg" />
+        <p><input type="button" id="theButton" value="click me!" onclick="pictureChange()"></p>
