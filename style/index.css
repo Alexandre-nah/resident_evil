@@ -1,0 +1,229 @@
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
+body {
+    background-color: #111;
+}
+
+header {
+    width: 100%;
+    height: 4rem;
+    background: linear-gradient(#000, #333);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+header img {
+    height: 3rem;
+}
+
+section {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+section h1 {
+    font-size: 5rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: resident, Arial, Helvetica, sans-serif;
+}
+
+section p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+    text-align: center;
+}
+
+section *::selection {
+    color: #f00;
+    background: transparent;
+}
+
+section .caption {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section br {
+    margin: .5rem;
+}
+
+/* .pic-box : div contenant une img et un texte (ex: citation) */
+section .pic-box {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    margin-bottom: 3rem;
+}
+
+.pic-box img {
+    width: 100%;
+}
+
+.pic-box figcaption {
+    font-family: Helvetica, sans-serif;
+    font-size: .75rem;
+    opacity: 75%;
+    text-align: center;
+}
+
+aside {
+    border: 2px solid #900;
+    width: 100%;
+    background: linear-gradient(#000, #1a1a1a);
+    margin-bottom: 1rem;
+}
+
+aside h1 {
+    font-family: resident, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+}
+
+aside p {
+    text-align: center;
+}
+
+aside p:last-of-type {
+    margin-bottom: 5rem;
+}
+
+.games, .persos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.games a {
+    width: 20%;
+}
+
+.games a img {
+    width: 100%;
+}
+
+.games a h2 {
+    text-align: center;
+    font-family: resident, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+/* .title-box : La première section qui contient le titre et la vidéo en fond */
+.title-box {
+    margin-top: 4rem;
+}
+
+/* .caption : zone de texte pricipale des sections */
+.title-box .caption {
+    position: absolute;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    background: linear-gradient(to right, rgba(3, 3, 3), rgba(5, 5, 5, .85), rgba(10, 10, 10, .85));
+}
+
+.title-box .caption img {
+    margin: auto;
+    height: 12rem;
+    z-index: 1;
+}
+
+.title-box > img, video {
+    width: 70%;
+    height: 100%;
+    margin-left: 30%;
+    z-index: -2;
+    background-color: #000;
+}
+
+.title-box #umbrellaLogo {
+    position: absolute;
+    left: 15%;
+    z-index: 0;
+    height: 100%;
+    opacity: 0;
+    transition: .7s;
+}
+
+.title-box .caption:hover > #umbrellaLogo {
+    opacity: .1;
+}
+
+/* .prensentation-box : La section de présentation du jeu */
+.presentation-box {
+    height: 50vh;
+}
+
+.persos-box > h2 {
+    text-align: center;
+    font-family: resident, Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.persos {
+    align-items: flex-start;
+}
+
+.persos article {
+    width: 30%;
+}
+
+.persos img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.persos article h1 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.persos article p {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.buy-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: .5rem;
+    border: 1px solid red;
+    background: linear-gradient(#000, #1a1a1a);
+}
+
+.buy-link img {
+    display: block;
+    margin: 0 auto;
+    height: 7rem;
+}
+
+.buy-link h1 {
+    font-size: 2.5rem;
+    transition: 300ms;
+}
+
+.buy-link:hover > h1 {
+    color: #f00;
+}
