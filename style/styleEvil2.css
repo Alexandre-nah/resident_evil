@@ -1,0 +1,226 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #e5e5e5;
+}
+
+body {
+    background-color: #030912;
+}
+
+header {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    background: linear-gradient(rgb(0, 0, 0), #071121);
+    justify-content: space-around;
+    align-items: center;
+    position: center;
+    top: 0;
+    z-index: 1;
+}
+
+header img {
+    height: 10rem;
+}
+
+
+/* section de l'image de fond */
+
+.title-box {
+    position: relative;
+}
+
+.title-box div {
+    position: absolute;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    background: linear-gradient(to right, rgba(10, 10, 10), rgba(10, 10, 10, .8));
+}
+
+.title-box div img {
+    margin: auto;
+    height: 14rem;
+}
+
+.title-box>img {
+    width: 80%;
+    margin-left: 20%;
+    z-index: -1;
+}
+
+
+/* section partie univers */
+
+.part-univers {
+    border: 4mm ridge rgba(255, 0, 0, 0.3);
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.part-univers {
+    /*padding: 3rem 0;*/
+}
+
+.div-gif {
+    position: absolute;
+    left: 22px;
+    top: 50rem;
+}
+
+.title-univers {
+    position: absolute;
+    font-size: 5em;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    left: 41%;
+    margin-top: -5px;
+}
+
+.title-univers::selection,
+.content-univers *::selection {
+    color: #f00;
+    background: transparent;
+}
+
+.strong {
+    color: #f00;
+}
+
+.content-univers {
+    width: 80%;
+}
+
+.content-univers p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+    margin-top: 5rem;
+    margin-left: 400px;
+}
+
+
+/* section partie resumer */
+
+.part-resumer {
+    border: 4mm ridge rgba(255, 0, 0, 0.3);
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*padding: 3rem 0;*/
+}
+
+.part-resumer div {
+    padding: 3rem 0;
+}
+
+.title-resumer {
+    font-size: 5rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    position: absolute;
+    left: 30px;
+    margin-top: -20px;
+}
+
+.title-resumer::selection,
+.content-resumer *::selection {
+    color: #f00;
+    background: transparent;
+}
+
+.content-resumer {
+    width: 80%;
+}
+
+.content-resumer p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+    margin-top: 2rem;
+}
+
+
+/* section partie personnage */
+
+.part-personnage {
+    border: 4mm ridge rgba(255, 0, 0, 0.3);
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*padding: 3rem 0;*/
+}
+
+.title-leon {
+    font-size: 3rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    position: absolute;
+    left: 8rem;
+    margin-top: -20px;
+}
+
+.title-claire {
+    font-size: 3rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: resident, Helvetica, sans-serif;
+    position: absolute;
+    right: 35rem;
+    margin-top: -20px;
+}
+
+.title-leon::selection,
+.title-claire::selection,
+.content-leon::selection,
+.content-claire::selection {
+    color: #f00;
+    background: transparent;
+}
+
+
+.content-leon {
+    width: 75%;
+    position: relative;
+    right: -50px;
+    margin-top: 25px;
+}
+
+.content-leon p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 1.2rem;
+    padding: 1.5rem 3rem;
+    text-align: justify;
+    margin-top: 2rem;
+}
+
+.content-claire{
+    width: 75%;
+    position: relative;
+    right: -50px;
+    margin-top: 25px;
+}
+
+.btnLeon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/* section partie personnage */
